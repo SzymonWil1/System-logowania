@@ -1,3 +1,15 @@
+<?php
+session_start()
+if (isset($_POST['login'])) {
+    $login = $_POST['login'];
+    $haslo = $_POST['haslo'];
+    if ($login == 'admin' && $haslo == 'TajneHaslo123') {
+        $_SESSION['login'] = $login;
+        header("location: wynik.php")
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
