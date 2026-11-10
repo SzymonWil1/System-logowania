@@ -1,11 +1,11 @@
 <?php
-session_start()
+session_start();
 if (isset($_POST['login'])) {
     $login = $_POST['login'];
     $haslo = $_POST['haslo'];
     if ($login == 'admin' && $haslo == 'TajneHaslo123') {
         $_SESSION['login'] = $login;
-        header("location: wynik.php")
+        header("location: wyniki.php");
     }
 }
 ?>
@@ -25,6 +25,5 @@ if (isset($_POST['login'])) {
         <input type="password" name="haslo" id="haslo"><br>
         <input type="submit" value="Zaloguj">
     </form>
-    ahyg3qaY
 </body>
 </html>

@@ -12,7 +12,7 @@ if (isset($_SESSION['login'])) {
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Wyniki</title>
 </head>
 <body>
     <table>
@@ -45,13 +45,17 @@ if (isset($_SESSION['login'])) {
         echo  $wiersz[4];
         echo "</td>";
         echo "<td>";
-        echo "<a href='$wiersz[5]'>wyniki</a>";
+        if ($wiersz[5] != "") {
+             echo "<a href='$wiersz[5]'>wyniki</a>";
+        }
         echo "</td>";
         echo "</tr>";
 
     }
     ?>
     </table>
+<a href="wyloguj.php">Wyloguj się.</a>
+
 </body>
 </html>
 <?php
