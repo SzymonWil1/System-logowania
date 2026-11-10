@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (isset($_SESSION['koszyk'])) {
+    $_SESSION['koszyk'] = "";
+}
 ?>
 <!DOCTYPE html>
 <html lang="pl">
