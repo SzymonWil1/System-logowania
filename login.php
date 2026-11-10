@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 if (isset($_POST['login'])) {
@@ -26,4 +27,5 @@ if (isset($_POST['login'])) {
         <input type="submit" value="Zaloguj">
     </form>
 </body>
+
 </html>

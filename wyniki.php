@@ -1,3 +1,4 @@
+
 <?php
 $polaczenie = mysqli_connect("localhost", "root", "", "labolatorium");
 session_start();
@@ -60,4 +61,6 @@ if (isset($_SESSION['login'])) {
 </html>
 <?php
 mysqli_close($polaczenie);
+
+
 ?>
